@@ -84,60 +84,63 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 px-5 py-5 shadow-xl ring-1 ring-white/10">
-              {/* Grid pattern */}
-              <div className="absolute inset-0 opacity-20">
-                <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgb(37,99,235)" strokeWidth="0.5" />
-                    </pattern>
-                  </defs>
-                  <rect width="100%" height="100%" fill="url(#grid)" />
-                </svg>
-              </div>
+            {/* Dark glassmorphism card */}
+            <div className="relative aspect-video overflow-hidden rounded-2xl bg-[#0F172A] px-5 py-5 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)] ring-1 ring-white/5">
+              {/* Grid pattern - subtle blue lines */}
+              <div className="absolute inset-0 bg-[linear-gradient(rgba(30,58,138,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(30,58,138,0.1)_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
+              
+              {/* Radial gradient glow */}
+              <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/10 blur-[100px]"></div>
 
-              {/* Animated electrical lines */}
+              {/* Animated electrical center */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative h-32 w-full max-w-md">
-                  {/* Central bolt */}
+                <div className="relative h-40 w-40">
+                  {/* Central glowing bolt */}
                   <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <div className="animate-pulse">
-                      <Zap className="h-16 w-16 text-blue-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]" fill="currentColor" />
+                    <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-blue-600 shadow-[0_0_50px_rgba(37,99,235,0.6)] ring-1 ring-white/20 backdrop-blur-sm">
+                      <Zap className="h-10 w-10 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]" fill="currentColor" />
                     </div>
                   </div>
 
-                  {/* Orbiting dots */}
-                  <div className="absolute left-1/2 top-1/2 h-48 w-48 -translate-x-1/2 -translate-y-1/2 animate-[spin_20s_linear_infinite]">
-                    <div className="absolute left-0 top-1/2 h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-                    <div className="absolute right-0 top-1/2 h-2 w-2 rounded-full bg-sky-400 shadow-[0_0_10px_rgba(56,189,248,0.8)]" />
-                    <div className="absolute left-1/2 top-0 h-2 w-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
-                    <div className="absolute bottom-0 left-1/2 h-2 w-2 rounded-full bg-sky-400 shadow-[0_0_10px_rgba(56,189,248,0.8)]" />
+                  {/* Orbiting particles */}
+                  {/* Orbit 1 */}
+                  <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 animate-[spin_10s_linear_infinite]">
+                    <div className="absolute left-1/2 top-0 h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,1)]" />
+                    <div className="absolute bottom-0 left-1/2 h-1.5 w-1.5 rounded-full bg-blue-600/50" />
+                  </div>
+                  
+                  {/* Orbit 2 (reverse) */}
+                  <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 animate-[spin_15s_linear_infinite_reverse]">
+                    <div className="absolute right-0 top-1/2 h-1.5 w-1.5 rounded-full bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,1)]" />
+                    <div className="absolute left-0 top-1/2 h-1 w-1 rounded-full bg-sky-600/50" />
                   </div>
 
-                  {/* Outer ring */}
-                  <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 animate-[spin_30s_linear_infinite_reverse]">
-                    <div className="absolute left-0 top-1/2 h-1.5 w-1.5 rounded-full bg-blue-400/60" />
-                    <div className="absolute right-0 top-1/2 h-1.5 w-1.5 rounded-full bg-blue-400/60" />
-                    <div className="absolute left-1/2 top-0 h-1.5 w-1.5 rounded-full bg-sky-300/60" />
-                    <div className="absolute bottom-0 left-1/2 h-1.5 w-1.5 rounded-full bg-sky-300/60" />
+                  {/* Orbit 3 */}
+                  <div className="absolute left-1/2 top-1/2 h-60 w-60 -translate-x-1/2 -translate-y-1/2 animate-[spin_20s_linear_infinite]">
+                     <div className="absolute left-1/4 top-1/4 h-1 w-1 rounded-full bg-white/40" />
+                     <div className="absolute right-1/4 bottom-1/4 h-1 w-1 rounded-full bg-white/20" />
                   </div>
                 </div>
               </div>
 
-              {/* Status bar */}
-              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between border-t border-white/10 bg-gray-900/50 px-4 py-2 text-[10px] font-medium text-blue-300 backdrop-blur-sm sm:text-xs">
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse" />
+              {/* Status bar - Glass effect dashboard style */}
+              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between border-t border-white/5 bg-[#0B1121]/80 px-4 py-3 text-[10px] font-medium backdrop-blur-md sm:text-xs">
+                <div className="flex items-center gap-2 text-blue-100">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+                  </span>
                   <span className="tracking-wider">SYSTEMS ACTIVE</span>
                 </div>
-                <div className="flex gap-4">
-                  <span className="hidden sm:block text-blue-400/80">EFFICIENCY: <span className="text-white">98.5%</span></span>
-                  <span className="hidden sm:block text-blue-400/80">UPTIME: <span className="text-white">99.99%</span></span>
+                
+                <div className="flex gap-6 text-blue-200/70">
+                  <span className="hidden sm:block">EFFICIENCY: <span className="text-white font-semibold">98.5%</span></span>
+                  <span className="hidden sm:block">UPTIME: <span className="text-white font-semibold">99.99%</span></span>
                 </div>
-                <div className="flex items-center gap-1">
-                  <span className="text-blue-400/80">LATENCY:</span>
-                  <span className="text-emerald-400">12ms</span>
+                
+                <div className="flex items-center gap-1 text-blue-200/70">
+                  <span>LATENCY:</span>
+                  <span className="text-emerald-400 font-semibold">12ms</span>
                 </div>
               </div>
             </div>
