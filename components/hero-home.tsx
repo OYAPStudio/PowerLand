@@ -126,9 +126,19 @@ export default function HeroHome() {
               </div>
 
               {/* Status bar */}
-              <div className="relative flex items-center justify-between text-xs text-blue-400/80">
-                <span>⚡ POWERLAND SYSTEMS</span>
-                <span className="animate-pulse">● ONLINE</span>
+              <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between border-t border-white/10 bg-gray-900/50 px-4 py-2 text-[10px] font-medium text-blue-300 backdrop-blur-sm sm:text-xs">
+                <div className="flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse" />
+                  <span className="tracking-wider">SYSTEMS ACTIVE</span>
+                </div>
+                <div className="flex gap-4">
+                  <span className="hidden sm:block text-blue-400/80">EFFICIENCY: <span className="text-white">98.5%</span></span>
+                  <span className="hidden sm:block text-blue-400/80">UPTIME: <span className="text-white">99.99%</span></span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-blue-400/80">LATENCY:</span>
+                  <span className="text-emerald-400">12ms</span>
+                </div>
               </div>
             </div>
           </div>
