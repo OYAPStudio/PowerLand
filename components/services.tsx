@@ -33,7 +33,7 @@ export default function Services() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-sm font-medium text-amber-400">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-500">
               <BatteryCharging className="h-3.5 w-3.5" />
               {t("sectionLabel")}
             </div>
@@ -50,7 +50,7 @@ export default function Services() {
             {serviceIcons.map(({ key, icon: Icon }, index) => (
               <article key={key} data-aos="zoom-y-out" data-aos-delay={index * 100}>
                 <h3 className="mb-2 flex items-center gap-2 font-medium text-gray-200">
-                  <Icon className="h-4 w-4 text-amber-500" />
+                  <Icon className="h-4 w-4 text-blue-500" />
                   <span>{t(`items.${key}.title`)}</span>
                 </h3>
                 <p className="text-[15px] text-gray-400">

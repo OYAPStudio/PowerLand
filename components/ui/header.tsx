@@ -2,6 +2,7 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import Logo from "./logo";
 import ThemeToggle from "./theme-toggle";
 import LanguageSwitcher from "./language-switcher";
@@ -47,7 +48,7 @@ export default function Header() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                    className="text-sm font-medium text-gray-600 transition hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400"
                   >
                     {link.label}
                   </a>
@@ -67,21 +68,11 @@ export default function Header() {
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
               aria-label="Toggle menu"
             >
-              <svg className="h-5 w-5 fill-current" viewBox="0 0 20 20">
-                {mobileNavOpen ? (
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                ) : (
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  />
-                )}
-              </svg>
+              {mobileNavOpen ? (
+                <X className="h-5 w-5" />
+              ) : (
+                <Menu className="h-5 w-5" />
+              )}
             </button>
           </div>
         </div>

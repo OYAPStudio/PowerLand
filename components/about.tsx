@@ -19,7 +19,7 @@ export default function About() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-400">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400">
               <Shield className="h-3.5 w-3.5" />
               {t("sectionLabel")}
             </div>
@@ -43,7 +43,7 @@ export default function About() {
                 data-aos="zoom-y-out"
                 data-aos-delay={index * 100}
               >
-                <div className="mb-1 text-4xl font-bold text-amber-500">
+                <div className="mb-1 text-4xl font-bold text-blue-600 dark:text-blue-500">
                   {stat.value}
                 </div>
                 <div className="text-sm text-gray-600 dark:text-gray-400">

@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-16">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3 py-1 text-sm font-medium text-amber-600 dark:text-amber-400">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400">
               <Mail className="h-3.5 w-3.5" />
               {t("sectionLabel")}
             </div>
@@ -28,8 +28,8 @@ export default function Contact() {
             {/* Contact info */}
             <div className="space-y-6" data-aos="fade-up">
               <div className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900/30">
-                  <Mail className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
+                  <Mail className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
                   <h3 className="mb-1 font-medium text-gray-900 dark:text-white">
@@ -42,8 +42,8 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900/30">
-                  <Phone className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
+                  <Phone className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
                   <h3 className="mb-1 font-medium text-gray-900 dark:text-white">
@@ -56,8 +56,8 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900/30">
-                  <MapPin className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
+                  <MapPin className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
                   <h3 className="mb-1 font-medium text-gray-900 dark:text-white">
@@ -126,7 +126,7 @@ export default function Contact() {
                   </div>
                   <button
                     type="submit"
-                    className="btn group w-full bg-gradient-to-t from-amber-600 to-amber-500 text-white shadow-lg shadow-amber-500/25 hover:from-amber-700 hover:to-amber-600"
+                    className="btn group w-full bg-gradient-to-t from-blue-600 to-blue-500 text-white shadow-lg shadow-blue-500/25 hover:from-blue-700 hover:to-blue-600"
                   >
                     <span className="relative inline-flex items-center gap-2">
                       {t("form.send")}
