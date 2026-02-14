@@ -30,11 +30,11 @@ export default function Header() {
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className={`relative flex h-14 items-center justify-between gap-3 rounded-2xl px-3 shadow-lg backdrop-blur-sm transition-all ${
+          className={`relative flex h-14 items-center justify-between gap-3 rounded-2xl px-3 transition-all ${
             scrolled
-              ? "bg-white/95 dark:bg-gray-900/95"
-              : "bg-white/90 dark:bg-gray-900/90"
-          } shadow-black/[0.03] before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(var(--color-gray-100),var(--color-gray-200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)] dark:shadow-black/[0.15] dark:before:[background:linear-gradient(var(--color-gray-800),var(--color-gray-700))_border-box]`}
+              ? "bg-white/80 dark:bg-gray-900/80 shadow-lg border border-gray-200/50 dark:border-gray-700/50"
+              : "bg-white/60 dark:bg-gray-900/60 shadow-md border border-gray-200/30 dark:border-gray-800/30"
+          } backdrop-blur-md backdrop-saturate-150`}
         >
           {/* Site branding */}
           <div className="flex flex-1 items-center">
