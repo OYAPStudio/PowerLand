@@ -13,9 +13,7 @@ export default function HeroHome() {
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         
-        {/* Spotlight Glows */}
-        <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-blue-500 opacity-20 blur-[100px] animate-pulse"></div>
-        <div className="absolute bottom-0 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-sky-500 opacity-10 blur-[120px]"></div>
+        {/* Spotlight Glows - REMOVED */}
       </div>
 
       <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
@@ -26,7 +24,6 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
           >
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500"></span>
             </span>
             <span className="text-sm font-medium text-blue-300">
@@ -41,13 +38,8 @@ export default function HeroHome() {
             data-aos-delay={100}
           >
             {t("title")}{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10 bg-gradient-to-r from-blue-400 via-sky-400 to-blue-400 bg-clip-text text-transparent blur-sm filter">
-                {t("titleHighlight")}
-              </span>
-              <span className="absolute inset-0 z-10 bg-gradient-to-r from-blue-400 via-sky-400 to-blue-400 bg-clip-text text-transparent">
-                {t("titleHighlight")}
-              </span>
+            <span className="bg-gradient-to-r from-blue-400 via-sky-400 to-blue-400 bg-clip-text text-transparent">
+              {t("titleHighlight")}
             </span>
           </h1>
 
@@ -68,7 +60,7 @@ export default function HeroHome() {
           >
             <a
               href="#services"
-              className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-blue-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+              className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-blue-600 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900"
             >
               <Zap className="h-5 w-5 fill-current" />
               <span>{t("cta")}</span>
