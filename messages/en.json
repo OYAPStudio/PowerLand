@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "title": "PowerLand – Electrical & Solar Energy Solutions",
+    "description": "PowerLand is a leading provider of electrical and solar energy solutions including automation, VFDs, weighing devices, spare parts, and energy quality systems."
+  },
+  "nav": {
+    "services": "Services",
+    "partners": "Partners",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Official Partner of Bedford & Entes",
+    "title": "Powering the Future of",
+    "titleHighlight": "Energy & Automation",
+    "description": "PowerLand delivers comprehensive electrical and solar energy solutions — from industrial automation and VFD systems to energy quality management. Your trusted partner for smart power infrastructure.",
+    "cta": "Explore Our Services",
+    "ctaSecondary": "Contact Us"
+  },
+  "services": {
+    "sectionLabel": "What We Offer",
+    "title": "Our Services & Solutions",
+    "description": "From solar energy projects to industrial automation, we provide end-to-end electrical solutions backed by world-class partnerships.",
+    "items": {
+      "projects": {
+        "title": "Project Services",
+        "description": "Complete turnkey project solutions for solar installations, electrical infrastructure, and industrial power systems. From design to commissioning."
+      },
+      "spareParts": {
+        "title": "Spare Parts",
+        "description": "Genuine spare parts and components for all electrical and automation systems. Quick delivery and competitive pricing guaranteed."
+      },
+      "weighing": {
+        "title": "Weighing Devices",
+        "description": "Precision industrial weighing solutions including load cells, indicators, and complete weighing systems for all industries."
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Industrial automation solutions including PLCs, SCADA systems, HMI panels, and complete automation engineering services."
+      },
+      "vfd": {
+        "title": "VFD (Bedford)",
+        "description": "Variable Frequency Drives from Bedford — energy-efficient motor control solutions for industrial and commercial applications."
+      },
+      "electrical": {
+        "title": "Electrical Items (Entes)",
+        "description": "Premium electrical monitoring and protection devices from Entes — current transformers, analyzers, and power meters."
+      },
+      "energy": {
+        "title": "Energy Quality",
+        "description": "Power Factor Correction (PFC), Active Harmonic Filters (AHF), and Static Var Generators (SVG) for optimal energy quality."
+      }
+    }
+  },
+  "partners": {
+    "sectionLabel": "Trusted Partnerships",
+    "title": "Official Authorized Partner",
+    "description": "We are the official authorized partners of leading global brands in power electronics and electrical monitoring.",
+    "bedford": {
+      "name": "Bedford Inverters",
+      "description": "Global leader in Variable Frequency Drives and inverter technology for industrial motor control and energy efficiency."
+    },
+    "entes": {
+      "name": "Entes",
+      "description": "World-renowned manufacturer of electrical measurement, monitoring, and protection devices for power distribution systems."
+    }
+  },
+  "about": {
+    "sectionLabel": "About PowerLand",
+    "title": "Your Trusted Energy Partner",
+    "description": "PowerLand is a leading electrical and solar energy company specializing in industrial power solutions. With years of experience and authorized partnerships with global brands like Bedford and Entes, we deliver reliable, efficient, and innovative solutions for businesses across the region.",
+    "stats": {
+      "projects": "500+",
+      "projectsLabel": "Completed Projects",
+      "clients": "200+",
+      "clientsLabel": "Happy Clients",
+      "experience": "10+",
+      "experienceLabel": "Years Experience",
+      "support": "24/7",
+      "supportLabel": "Technical Support"
+    }
+  },
+  "contact": {
+    "sectionLabel": "Get In Touch",
+    "title": "Contact Us",
+    "description": "Ready to power your next project? Reach out to our team for consultation, quotes, or technical support.",
+    "email": "Email",
+    "emailValue": "info@powerland.com",
+    "phone": "Phone",
+    "phoneValue": "+964 XXX XXX XXXX",
+    "address": "Address",
+    "addressValue": "Baghdad, Iraq",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "message": "Your Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 PowerLand. All rights reserved.",
+    "services": "Services",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "contactUs": "Contact Us",
+    "privacy": "Privacy Policy"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "switchTo": "العربية"
+  }
+}
