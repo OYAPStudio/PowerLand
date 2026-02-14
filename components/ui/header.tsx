@@ -79,13 +79,13 @@ export default function Header() {
 
         {/* Mobile navigation */}
         {mobileNavOpen && (
-          <div className="mt-2 rounded-2xl bg-white/95 p-4 shadow-lg backdrop-blur-sm dark:bg-gray-900/95 md:hidden">
+          <div className="mt-2 rounded-2xl border border-gray-200/50 bg-white/80 p-4 shadow-xl backdrop-blur-md backdrop-saturate-150 dark:border-gray-700/50 dark:bg-gray-900/80 md:hidden">
             <ul className="flex flex-col gap-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
+                    className="block rounded-lg px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-white/50 hover:text-blue-600 dark:text-gray-200 dark:hover:bg-gray-800/50 dark:hover:text-blue-400"
                     onClick={() => setMobileNavOpen(false)}
                   >
                     {link.label}
