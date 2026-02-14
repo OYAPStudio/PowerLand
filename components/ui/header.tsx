@@ -64,7 +64,7 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <button
-              className="inline-flex items-center justify-center rounded-lg p-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800 md:hidden"
+              className="inline-flex items-center justify-center rounded-lg border border-gray-200/50 bg-white/50 p-2 text-gray-700 shadow-sm transition hover:bg-gray-100 dark:border-gray-700/50 dark:bg-gray-800/50 dark:text-gray-200 dark:hover:bg-gray-700 md:hidden"
               onClick={() => setMobileNavOpen(!mobileNavOpen)}
               aria-label="Toggle menu"
             >
