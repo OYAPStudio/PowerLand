@@ -7,7 +7,7 @@ export default function HeroHome() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-slate-950 pt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950 pt-20">
       {/* Background Effects */}
       <div className="absolute inset-0 z-0">
         {/* Grid Pattern */}
