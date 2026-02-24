@@ -258,18 +258,6 @@ export default function HeroHome() {
                   <span>{t("ctaSecondary")}</span>
                 </a>
               </div>
-              <div className="hidden divide-x divide-white/10 overflow-hidden rounded-full border border-white/10 text-xs uppercase tracking-[0.3em] lg:flex">
-                {metrics.slice(0, 3).map((m) => (
-                  <div key={m.label} className="flex flex-col px-5 py-3">
-                    <span className="text-[11px] text-slate-500">
-                      {m.label}
-                    </span>
-                    <span className="text-lg font-semibold tracking-tight">
-                      {m.value}
-                    </span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 
